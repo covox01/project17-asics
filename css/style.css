@@ -1,0 +1,26 @@
+#logo {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   /* border: 1px solid red; */
+}
+
+#main-logo {
+   z-index: 100;
+}
+
+.logo-clip-svg {
+   clip-path: url(#logo-clip)
+}
+
+.logo-copy-svg {
+   clip-path: url(#logo-copy)
+}
+
+.gradient {
+   fill: url(#logo-copy-gradient)
+}
+
+/* .logo-copy-color {
+   clip-path: url("")
+} */
