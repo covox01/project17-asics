@@ -18,12 +18,12 @@ function sequence2(){
 }
 
 function exit(){
-   TweenMax.set("#logo-copy-gradient-fill", {rotation: 180, x: 400})
+   TweenMax.set("#logo-copy-gradient-fill", {rotation: 180, x: 430})
    var tl = new TimelineMax()
    tl.to("#fill-path", 1, { drawSVG: "100% 100%", opacity: 0, ease: logoEase }, "sync")
-   .to("#logo-copy-gradient-fill", .7, {x: 0, ease: logoEase}, "sync")
-   .to("#main-logo", 1, { ease: logoEase }, "sync+=.5")
-   .to("#logo-copy-color", .5, { opacity: 0, onComplete: clearProps}, "-=.7")
+   .to("#logo-copy-gradient-fill", .7, {x: 0, ease: Power2.easeInOut}, "sync")
+   .to("#main-logo", 1, { ease: logoEase }, "sync+=.7")
+   .to("#logo-copy-color", .5, { opacity: 0, onComplete: clearProps}, "-=1")
 }
 
 function clearProps(){
